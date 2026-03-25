@@ -6,7 +6,7 @@ public class defaultCountingOutRhymer {
     public static final int MAX_SIZE = 12;
     public static final int FULL_THRESHOLD = 11;
 
-    private int[] NUMBERS = new int[MAX_SIZE];
+    private final int[] NUMBERS = new int[MAX_SIZE];
 
     public int total = INITIAL_TOTAL;
 
@@ -34,5 +34,4 @@ public class defaultCountingOutRhymer {
             return INITIAL_TOTAL;
         return NUMBERS[total--];
     }
-
 }
